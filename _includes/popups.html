@@ -1,0 +1,214 @@
+<!--popup-outer-box-->
+<div class="popup-outer-box popup-main" id="popup-edit">
+	<div class="popup-box">
+		<a href="" class="btn-popup-close btn button-light button-large btn-action-ico ico-close js-popup-close"></a>
+		<div class="popup-title-wrap">
+			<div class="popup-title">Редактировать</div>
+			<div class="breadcrumbs-box">
+				<ol class="menu">
+					<li><a href="">САМОЛЕТ</a></li>
+					<li><a href="">Санкт-Петербург</a></li>
+					<li><a href="">Новое Колпино (Астрид)</a></li>
+					<li><a href="">Стройплощадка</a></li>
+				</ol>
+			</div>
+		</div>
+		<div class="popup-content-wrap">
+			<form action="/" class="frm-popup form-main">
+				<div class="frm-row">
+					<div class="frm-field">
+						<div class="field-title">Название</div>
+						<input type="text" class="form-input" placeholder="" value="Камера 82.1.10">
+					</div>
+				</div>
+				<div class="frm-row">
+					<div class="frm-field">
+						<div class="field-title">URL</div>
+						<input type="url" class="form-input" placeholder="" value="rtsp://admin:ubnt123456679878785876898349">
+					</div>
+				</div>
+				<div class="frm-row">
+					<div class="frm-field">
+						<div class="field-title">Preset</div>
+						<select class="form-input" required>
+							<option disabled hidden value="">Выбрать</option><!--placeholder-->
+							<option selected>1 месяц</option>
+							<option>Пункт списка</option>
+							<option>Пункт списка</option>
+							<option>Пункт списка</option>
+						</select>
+					</div>
+				</div>
+				<div class="frm-row">
+					<div class="frm-field">
+						<div class="field-title">Комментарий</div>
+						<textarea class="form-input" placeholder="Ваш текст тут" value=""></textarea>
+					</div>
+				</div>
+				<div class="frm-row-submit">
+					<div class="frm-field">
+						<button type="submit" class="btn">Сохранить</button>
+					</div>
+					<div class="frm-field">
+						<a href="" class="btn button-light js-popup-close">Отмена</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div><!--/popup-outer-box-->
+<!--popup-outer-box-->
+<div class="popup-outer-box" id="popup-del">
+	<div class="popup-box">
+		<a href="" class="btn-popup-close btn button-light button-large btn-action-ico ico-close js-popup-close"></a>
+		<div class="popup-title-wrap">
+			<div class="popup-title">Удаление раскладки</div>
+			<p>Вы действительно хотите удалить данную раскладку?</p>
+		</div>
+		<div class="popup-content-wrap">
+			<form action="/" class="frm-popup">
+				<div class="frm-row-submit">
+					<div class="frm-field">
+						<button type="submit" class="btn">Удалить</button>
+					</div>
+					<div class="frm-field">
+						<a href="" class="btn button-light js-popup-close">Отмена</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div><!--/popup-outer-box-->
+<!--popup-outer-box-->
+<div class="popup-outer-box popup-side" id="popup-video-empty">
+	<div class="popup-box">
+		<a href="" class="btn-popup-close btn button-light button-large btn-action-ico ico-close js-popup-close"></a>
+		<div class="popup-title-wrap">
+			<div class="popup-title">Камера 82.1.10</div>
+			<div class="breadcrumbs-box">
+				<ol class="menu">
+					<li><a href="">САМОЛЕТ</a></li>
+					<li><a href="">Санкт-Петербург</a></li>
+					<li><a href="">Новое Колпино (Астрид)</a></li>
+					<li><a href="">Стройплощадка</a></li>
+				</ol>
+			</div>
+		</div>
+		<div class="popup-content-wrap">
+			<div class="popup-actions-panel">
+				<div class="frm-row">
+					<div class="frm-field field-tabs">
+						<div class="tabs-box js-tabs-nav">
+							<ul class="menu">
+								<li>
+									<a href="" class="btn button-tab active" data-tab="popup01">Видео</a>
+								</li>
+								<li>
+									<a href="" class="btn button-tab" data-tab="popup02">События</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="frm-field field-actions js-tab-block" data-tab="popup01">
+						<a href="" class="btn button-light btn-action-ico">
+							<img src="./img/icons/share.svg" alt="">
+						</a>
+						<a href="" class="btn button-light btn-action-ico">
+							<img src="./img/icons/edit.svg" alt="">
+						</a>
+						<a href="" class="btn button-light btn-action-ico ico-fav button-active-toggle js-btn-tgl"></a>
+					</div>
+				</div>
+			</div>
+			<div class="popup-video-box js-tab-block" data-tab="popup01">
+				<video controls autoplay loop muted playsinline>
+					<source src="./img/1.mp4" type="video/mp4">
+					<!--<source src="./img/1.webm" type="video/webm">-->
+					<!--<source src="./img/1.ogv" type="video/ogg">-->
+					<p>HTML5 video не поддерживается вашим браузером.</p>
+				</video>
+				<div class="info-inner-wrap">
+					<p>IP:  10.78.1.11</p>
+					<p>MAC:  fc:9f:fd:58:d9:95</p>
+					<p>Модель:  DS-2cd2043G2-IU</p>
+					<p>Примечание:  Камера работает полноценно</p>
+				</div>
+			</div>
+			<div class="popup-empty-box empty-box js-tab-block" data-tab="popup02">
+				<div class="title-inner-wrap">
+					<div class="elm-ico">
+						<img src="./img/icons/detector.svg" alt="">
+					</div>
+					<div class="title-inner">Здесь пока пусто</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><!--/popup-outer-box-->
+<!--popup-outer-box-->
+<div class="popup-outer-box popup-side" id="popup-video-main">
+	<div class="popup-box">
+		<a href="" class="btn-popup-close btn button-light button-large btn-action-ico ico-close js-popup-close"></a>
+		<div class="popup-title-wrap">
+			<div class="popup-title">Камера 82.1.10</div>
+			<div class="breadcrumbs-box">
+				<ol class="menu">
+					<li><a href="">САМОЛЕТ</a></li>
+					<li><a href="">Санкт-Петербург</a></li>
+					<li><a href="">Новое Колпино (Астрид)</a></li>
+					<li><a href="">Стройплощадка</a></li>
+				</ol>
+			</div>
+		</div>
+		<div class="popup-content-wrap">
+			<div class="popup-actions-panel">
+				<div class="frm-row">
+					<div class="frm-field field-tabs">
+						<div class="tabs-box js-tabs-nav">
+							<ul class="menu">
+								<li>
+									<a href="" class="btn button-tab" data-tab="popup03">Видео</a>
+								</li>
+								<li>
+									<a href="" class="btn button-tab active" data-tab="popup04">События</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="frm-field field-actions js-tab-block" data-tab="popup03">
+						<a href="" class="btn button-light btn-action-ico">
+							<img src="./img/icons/share.svg" alt="">
+						</a>
+						<a href="" class="btn button-light btn-action-ico">
+							<img src="./img/icons/edit.svg" alt="">
+						</a>
+						<a href="" class="btn button-light btn-action-ico ico-fav button-active-toggle js-btn-tgl"></a>
+					</div>
+				</div>
+			</div>
+			<div class="popup-video-box js-tab-block" data-tab="popup03">
+				<video controls autoplay loop muted playsinline>
+					<source src="./img/1.mp4" type="video/mp4">
+					<!--<source src="./img/1.webm" type="video/webm">-->
+					<!--<source src="./img/1.ogv" type="video/ogg">-->
+					<p>HTML5 video не поддерживается вашим браузером.</p>
+				</video>
+				<div class="info-inner-wrap">
+					<p>IP:  10.78.1.11</p>
+					<p>MAC:  fc:9f:fd:58:d9:95</p>
+					<p>Модель:  DS-2cd2043G2-IU</p>
+					<p>Примечание:  Камера работает полноценно</p>
+				</div>
+			</div>
+			<div class="popup-events-box js-tab-block" data-tab="popup04">
+				<div class="items-wrap">
+					<!--item wrap-->
+					<div class="item-wrap">
+						CONTENT
+					</div>
+					<!--/item wrap-->
+				</div>
+			</div>
+		</div>
+	</div>
+</div><!--/popup-outer-box-->
