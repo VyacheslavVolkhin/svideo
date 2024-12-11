@@ -219,7 +219,7 @@ h4 {
 }
 @media (min-width: 1024px) {
   :root {
-    --paddingContainer: 4.8rem;
+    --paddingContainer: 2.4rem;
   }
 }
 /* ----------------------------------- *\
@@ -491,8 +491,8 @@ html.with-fancybox body.hide-scrollbar {
   top: 0;
   bottom: 0;
   left: 0;
-  width: 520px;
-  width: 52rem;
+  width: 400px;
+  width: 40rem;
   max-width: 90%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 130;
@@ -549,8 +549,8 @@ html.with-fancybox body.hide-scrollbar {
   transition: all ease 0.2s;
   -ms-flex-align: center;
       align-items: center;
-  padding: 4px 48px 4px 48px;
-  padding: 4px 4.8rem 4px 4.8rem;
+  padding: 4px 30px 4px 30px;
+  padding: 4px 3rem 4px 3rem;
   width: 100%;
 }
 .popup-menu-wrap .btn-menu.active {
@@ -659,9 +659,9 @@ html.with-fancybox body.hide-scrollbar {
 }
 @media (min-width: 1024px) {
   .header-panel-box .field-tabs {
-    width: 35.4rem;
-    -ms-flex: 0 0 35.4rem;
-        flex: 0 0 35.4rem;
+    width: 40.2rem;
+    -ms-flex: 0 0 40.2rem;
+        flex: 0 0 40.2rem;
   }
   .header-panel-box .tabs-box .menu .btn {
     min-width: 0;
@@ -749,6 +749,7 @@ html.with-fancybox body.hide-scrollbar {
 .item-tile-main:hover,
 .item-tile-layer:hover {
   background-color: #E6EAF3;
+  background-color: #dee2eb;
 }
 .item-tile-main:hover .tile-title,
 .item-tile-layer:hover .tile-title {
@@ -833,6 +834,20 @@ html.with-fancybox body.hide-scrollbar {
   top: 13px;
   left: 14px;
   z-index: 7;
+}
+.item-tile-main .tile-button-fav.btn,
+.item-tile-layer .tile-button-fav.btn {
+  border-radius: 50%;
+}
+.item-tile-main .tile-status,
+.item-tile-layer .tile-status {
+  padding-left: 20px;
+}
+.item-tile-main .tile-status:before,
+.item-tile-layer .tile-status:before {
+  width: 8px;
+  height: 8px;
+  margin-top: -4px;
 }
 .item-tile-layer {
   padding: 0;
@@ -1087,14 +1102,14 @@ html.with-fancybox body.hide-scrollbar {
 .tile-status:before {
   content: "";
   display: block;
-  width: 6px;
-  height: 6px;
+  width: 4px;
+  height: 4px;
   border-radius: 50%;
   background: var(--clr-light);
   position: absolute;
   top: 50%;
   left: 0;
-  margin-top: -3px;
+  margin-top: -2px;
 }
 .elm-status.color-alert:before,
 .tile-status.color-alert:before {
@@ -1302,8 +1317,7 @@ html.with-fancybox body.hide-scrollbar {
 .breadcrumbs-box {
   margin-bottom: 40px;
   margin-bottom: 4rem;
-  font-size: 20px;
-  font-size: 2rem;
+  font-size: 14px;
   color: var(--clr-light);
   font-weight: 500;
   line-height: normal;
@@ -1602,7 +1616,7 @@ html.with-fancybox body.hide-scrollbar {
   -ms-flex-order: 2;
       order: 2;
   padding: 30px var(--paddingContainer);
-  max-width: calc(100% - 52rem);
+  max-width: calc(100% - 40rem);
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -1631,8 +1645,7 @@ body.popup-open {
 }
 .popup-actions-panel {
   display: block;
-  margin-bottom: 32px;
-  margin-bottom: 3.2rem;
+  margin-bottom: 24px;
 }
 .popup-actions-panel .tabs-box {
   margin-bottom: 0;
@@ -1654,8 +1667,7 @@ body.popup-open {
   display: flex;
 }
 .popup-actions-panel .field-actions .btn-action-ico {
-  margin-left: 16px;
-  margin-left: 1.6rem;
+  margin-left: 8px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -1778,7 +1790,7 @@ body.popup-open {
 }
 @media (max-width: 1599px) {
   .breadcrumbs-box {
-    font-size: 20px;
+    font-size: 14px;
   }
   .side-wrap {
     width: 40rem;
@@ -1853,7 +1865,7 @@ body.popup-open {
     max-width: 100%;
   }
   .breadcrumbs-box {
-    font-size: 16px;
+    font-size: 14px;
   }
   .popup-outer-box {
     padding-top: 20px;
@@ -1875,6 +1887,15 @@ body.popup-open {
   }
   .popup-box .popup-title {
     font-size: 24px;
+  }
+  .popup-outer-box.popup-side .popup-box {
+    width: 60rem;
+  }
+  .popup-outer-box.popup-side .popup-box .popup-title-wrap {
+    padding-top: 0;
+  }
+  .popup-outer-box.popup-side .popup-box .btn-popup-close {
+    top: 10px;
   }
 }
 @media (max-width: 1023px) and (max-height: 799px) {
@@ -1915,7 +1936,7 @@ body.popup-open {
 }
 @media (min-width: 1024px) {
   .popup-outer-box.popup-main .popup-box {
-    width: 90rem;
+    width: 70rem;
   }
 }
 @media (min-width: 1024px) and (max-height: 899px) {
@@ -1924,6 +1945,15 @@ body.popup-open {
   }
   .popup-main .popup-box .popup-title-wrap {
     padding-top: 0;
+  }
+  .popup-outer-box.popup-side .popup-box {
+    width: 60rem;
+  }
+  .popup-outer-box.popup-side .popup-box .popup-title-wrap {
+    padding-top: 0;
+  }
+  .popup-outer-box.popup-side .popup-box .btn-popup-close {
+    top: 10px;
   }
 }
 @media (min-width: 1024px) and (max-height: 799px) {
