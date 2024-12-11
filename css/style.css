@@ -630,6 +630,23 @@ html.with-fancybox body.hide-scrollbar {
     width: 100%;
   }
 }
+@media (min-width: 1024px) {
+  .header-panel-box .field-tabs {
+    width: 35.4rem;
+    -ms-flex: 0 0 35.4rem;
+        flex: 0 0 35.4rem;
+  }
+  .header-panel-box .tabs-box .menu .btn {
+    min-width: 0;
+  }
+}
+@media (min-width: 1600px) {
+  .header-panel-box .field-tabs {
+    width: 47.4rem;
+    -ms-flex: 0 0 47.4rem;
+        flex: 0 0 47.4rem;
+  }
+}
 /* ----------------------------------- *\
 			items styles
 \* ----------------------------------- */
@@ -1123,13 +1140,13 @@ html.with-fancybox body.hide-scrollbar {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  padding: 50px 50px 86px 50px;
-  padding: 5rem 5rem 8.6rem 5rem;
+  padding: 30px 50px 30px 50px;
+  padding: 3rem 5rem 3rem 5rem;
 }
 .auth-box .form-inner-wrap {
   width: 100%;
-  padding: 50px 0;
-  padding: 5rem 0;
+  padding: 30px 0;
+  padding: 3rem 0;
   -ms-flex: 1;
       flex: 1;
   max-width: 480px;
@@ -1725,9 +1742,6 @@ body.popup-open {
   .breadcrumbs-box {
     font-size: 20px;
   }
-  .tiles-box .item-wrap {
-    width: 50%;
-  }
   .side-wrap {
     width: 40rem;
   }
@@ -1736,6 +1750,9 @@ body.popup-open {
   }
 }
 @media (max-width: 1199px) {
+  .tiles-box .item-wrap {
+    width: 50%;
+  }
   .tiles-layers-box .item-wrap {
     width: 33.33%;
   }
