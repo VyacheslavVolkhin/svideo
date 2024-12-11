@@ -470,8 +470,7 @@ html.with-fancybox body.hide-scrollbar {
   overflow: hidden;
 }
 .popup-menu-wrap {
-  font-size: 22px;
-  font-size: 2.2rem;
+  font-size: 18px;
   font-weight: bold;
 }
 .popup-menu-wrap .btn-popup.active ~ .popup-content-block {
@@ -525,16 +524,15 @@ html.with-fancybox body.hide-scrollbar {
 }
 .popup-menu-wrap .btn-popup-close {
   position: fixed;
-  top: 40px;
-  top: 4rem;
+  top: 18px;
   left: 48px;
   left: 4.8rem;
   z-index: 2;
   transition: all ease 0.2s;
 }
 .popup-menu-wrap .footer-wrap {
-  padding: 20px 48px 0 48px;
-  padding: 2rem 4.8rem 0 4.8rem;
+  padding: 10px 48px 0 48px;
+  padding: 10px 4.8rem 0 4.8rem;
   color: var(--clr-light);
   font-size: 14px;
   font-weight: 400;
@@ -545,8 +543,8 @@ html.with-fancybox body.hide-scrollbar {
   transition: all ease 0.2s;
   -ms-flex-align: center;
       align-items: center;
-  padding: 7px 48px 7px 48px;
-  padding: 7px 4.8rem 7px 4.8rem;
+  padding: 4px 48px 4px 48px;
+  padding: 4px 4.8rem 4px 4.8rem;
   width: 100%;
 }
 .popup-menu-wrap .btn-menu.active {
@@ -741,6 +739,14 @@ html.with-fancybox body.hide-scrollbar {
   transition: all ease 0.2s;
   overflow: hidden;
   padding: 15px;
+}
+.item-tile-main:hover,
+.item-tile-layer:hover {
+  background-color: #E6EAF3;
+}
+.item-tile-main:hover .tile-title,
+.item-tile-layer:hover .tile-title {
+  color: var(--clr-att);
 }
 .item-tile-main.tile-active,
 .item-tile-layer.tile-active {
@@ -1338,8 +1344,13 @@ html.with-fancybox body.hide-scrollbar {
 .actions-box .btn {
   min-width: 320px;
   min-width: 32rem;
-  height: 58px;
+  height: 50px;
   border-width: 2px;
+}
+.wrap:has(.popup-menu-wrap .btn-popup.active) .side-menu-box .btn-popup {
+  opacity: 0;
+  pointer-events: none;
+  display: none;
 }
 .side-menu-box .btn-popup {
   display: none;
@@ -1364,11 +1375,11 @@ html.with-fancybox body.hide-scrollbar {
   width: 100%;
   line-height: 1.375;
   height: auto;
-  min-height: 54px;
+  min-height: 50px;
   border-width: 2px;
   white-space: normal;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: left;
 }
 .side-menu-box .action-wrap .btn.button-light.open,
@@ -1382,7 +1393,7 @@ html.with-fancybox body.hide-scrollbar {
   filter: brightness(0) invert(1);
 }
 .side-menu-box .action-wrap .btn {
-  min-height: 58px;
+  min-height: 50px;
 }
 .side-menu-box li {
   margin-bottom: 10px;
@@ -1396,7 +1407,7 @@ html.with-fancybox body.hide-scrollbar {
   display: none;
 }
 .side-menu-box .menu ul .btn {
-  padding-left: 33px;
+  padding-left: 24px;
 }
 .side-menu-box .menu ul .btn.button-light {
   color: var(--clr-base);
@@ -1417,7 +1428,7 @@ html.with-fancybox body.hide-scrollbar {
   padding: 10px 0 0 0;
 }
 .side-menu-box .menu ul ul .btn {
-  padding-left: 53px;
+  padding-left: 40px;
 }
 .side-menu-box .menu ul ul .btn.button-light {
   color: var(--clr-base);
