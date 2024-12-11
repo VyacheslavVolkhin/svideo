@@ -589,10 +589,22 @@ html.with-fancybox body.hide-scrollbar {
   display: block;
   width: 100%;
 }
+@media (max-width: 1799px) {
+  .header-panel-box .field-input {
+    width: 20%;
+    min-width: 0;
+    min-width: 200px;
+  }
+}
 @media (max-width: 1023px) {
   .section-mobile-full {
     margin-left: calc(var(--paddingContainer) * -1);
     margin-right: calc(var(--paddingContainer) * -1);
+  }
+  .header-panel-box .field-input {
+    width: 25%;
+    min-width: 0;
+    min-width: 300px;
   }
 }
 @media (max-width: 767px) {
@@ -2401,6 +2413,7 @@ select.form-input:required:invalid {
   margin-top: -12px;
   margin-right: -12px;
   transition: all ease 0.2s;
+  filter: none;
 }
 .frm-main-select .btn:hover,
 .frm-main-select .btn.active {
@@ -2408,11 +2421,16 @@ select.form-input:required:invalid {
   background-color: var(--clr-bg-light);
   color: var(--clr-base);
 }
+.frm-main-select .btn:hover:before,
+.frm-main-select .btn.active:before {
+  filter: none;
+}
 .frm-main-select .btn.active {
   border-color: var(--clr-att);
 }
 .frm-main-select .btn.active:before {
   rotate: 180deg;
+  filter: none;
 }
 .field-title {
   display: block;

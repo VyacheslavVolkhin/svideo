@@ -66,16 +66,21 @@
 			margin-top: -12px;
 			margin-right: -12px;
 			transition: all ease 0.2s;
+			filter: none;
 		}
 		&:hover, &.active {
 			border-color: var(--clr-bg-light);
 			background-color: var(--clr-bg-light);
 			color: var(--clr-base);
+			&:before {
+				filter: none;
+			}
 		}
 		&.active {
 			border-color: var(--clr-att);
 			&:before {
 				rotate: 180deg;
+				filter: none;
 			}
 		}
 	}
