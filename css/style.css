@@ -276,12 +276,15 @@ html.with-fancybox body.hide-scrollbar {
   min-width: 0;
 }
 .page-full {
-  -ms-flex: 1 0 auto;
-      flex: 1 0 auto;
+  -ms-flex: 1;
+      flex: 1;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  overflow: hidden;
 }
 .wrap,
 .header,
@@ -296,7 +299,8 @@ html.with-fancybox body.hide-scrollbar {
 }
 .wrap {
   overflow: hidden;
-  min-height: 100vh;
+  min-height: 100dvh;
+  height: 100dvh;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -1590,6 +1594,9 @@ html.with-fancybox body.hide-scrollbar {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  max-height: 100%;
+  -ms-flex: 1;
+      flex: 1;
   width: calc(100% + var(--paddingContainer) + var(--paddingContainer));
   margin-left: calc(var(--paddingContainer) * -1);
   margin-right: calc(var(--paddingContainer) * -1);
@@ -1623,6 +1630,14 @@ html.with-fancybox body.hide-scrollbar {
       flex-direction: column;
   -ms-flex-pack: start;
       justify-content: flex-start;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.content-wrap::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 .content-wrap:has(.map-box) {
   padding: 0;
@@ -1808,6 +1823,10 @@ body.popup-open {
   }
 }
 @media (max-width: 1023px) {
+  .auth-box {
+    min-height: 100dvh;
+    background: #fff;
+  }
   .auth-box .photo-outer-wrap {
     display: none;
   }
@@ -1849,7 +1868,8 @@ body.popup-open {
     z-index: 10;
   }
   .content-outer-wrap {
-    display: block;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
   .side-wrap {
     -ms-flex-order: 1;
@@ -1937,6 +1957,17 @@ body.popup-open {
 @media (min-width: 1024px) {
   .popup-outer-box.popup-main .popup-box {
     width: 70rem;
+  }
+  .side-wrap {
+    max-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .side-wrap::-webkit-scrollbar {
+    width: 0;
+    height: 0;
   }
 }
 @media (min-width: 1024px) and (max-height: 899px) {
