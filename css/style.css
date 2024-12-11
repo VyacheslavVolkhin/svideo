@@ -566,6 +566,17 @@ html.with-fancybox body.hide-scrollbar {
 .popup-menu-wrap .btn-menu .button-ico svg {
   max-width: 24px;
   max-height: 24px;
+  transition: all ease 0.2s;
+}
+.popup-menu-wrap .btn-menu a.button-ico {
+  transition: all ease 0.2s;
+}
+.popup-menu-wrap .btn-menu a.button-ico:hover {
+  background-color: var(--clr-att);
+}
+.popup-menu-wrap .btn-menu a.button-ico:hover img,
+.popup-menu-wrap .btn-menu a.button-ico:hover svg {
+  filter: brightness(0) invert(1);
 }
 .popup-menu-wrap .btn-menu .button-title {
   -ms-flex: 1;
