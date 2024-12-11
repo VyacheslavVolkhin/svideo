@@ -652,13 +652,6 @@ html.with-fancybox body.hide-scrollbar {
     min-width: 0;
   }
 }
-@media (min-width: 1600px) {
-  .header-panel-box .field-tabs {
-    width: 47.4rem;
-    -ms-flex: 0 0 47.4rem;
-        flex: 0 0 47.4rem;
-  }
-}
 /* ----------------------------------- *\
 			items styles
 \* ----------------------------------- */
@@ -1561,8 +1554,8 @@ html.with-fancybox body.hide-scrollbar {
   padding: 0;
 }
 .side-wrap {
-  width: 520px;
-  width: 52rem;
+  width: 400px;
+  width: 40rem;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   padding: 30px var(--paddingContainer);
