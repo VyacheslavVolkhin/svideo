@@ -105,6 +105,15 @@ html.with-fancybox body.hide-scrollbar {
 		display: flex;
 		flex-wrap: wrap;
 	}
+	.field-button {
+		.btn.button-light {
+			&:hover {
+				background-color: var(--clr-border-main);
+				border-color: var(--clr-border-main);
+				color: var(--clr-att);
+			}
+		}
+	}
 	.frm-field {
 		width: 25%;
 		min-width: 300px;
@@ -158,6 +167,7 @@ html.with-fancybox body.hide-scrollbar {
 	}
 	.form-input {
 		padding-left: 14px;
+		font-weight: 600;
 	}
 	.btn-action-ico {
 		margin-left: 16px;

@@ -474,21 +474,42 @@
                         </div>
                     </div>
                     <div class="frm-row">
-                        <div class="frm-field">
+                        <div class="frm-field field-half">
                             <div class="field-title">URL</div>
                             <input type="url" class="form-input" placeholder="" value="rtsp://admin:ubnt123456679878785876898349">
+                        </div>
+                        <div class="frm-field field-half">
+                            <div class="field-title">GPS</div>
+                            <input type="text" class="form-input" placeholder="" value="">
                         </div>
                     </div>
                     <div class="frm-row">
                         <div class="frm-field">
                             <div class="field-title">Preset</div>
-                            <select class="form-input" required>
-                                <option disabled hidden value="">Выбрать</option><!--placeholder-->
-                                <option selected>1 месяц</option>
-                                <option>Пункт списка</option>
-                                <option>Пункт списка</option>
-                                <option>Пункт списка</option>
-                            </select>
+                            <div class="frm-main-select js-popup-wrap js-popup-select">
+                                <a href="" class="btn button-light js-btn-popup-toggle">
+                                    <div class="button-title"></div>
+                                </a>
+                                <div class="popup-content-block popup-dropdown-block js-popup-block">
+                                    <ul class="menu">
+                                        <li><a href="" class="btn-menu active">
+                                                <div class="button-title">1 месяц</div>
+                                            </a></li>
+                                        <li><a href="" class="btn-menu">
+                                                <div class="button-title">1 месяц</div>
+                                            </a></li>
+                                        <li><a href="" class="btn-menu">
+                                                <div class="button-title">1 месяц</div>
+                                            </a></li>
+                                        <li><a href="" class="btn-menu">
+                                                <div class="button-title">1 месяц</div>
+                                            </a></li>
+                                        <li><a href="" class="btn-menu">
+                                                <div class="button-title">1 месяц</div>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="frm-row">
@@ -569,6 +590,7 @@
                                 <img src="./img/icons/edit.svg" alt="">
                             </a>
                             <a href="" class="btn button-light btn-action-ico ico-fav button-active-toggle js-btn-tgl"></a>
+                            <a href="" class="btn button-light btn-action-ico ico-del"></a>
                         </div>
                     </div>
                 </div>

@@ -136,12 +136,17 @@
 .item-tile-layer {
 	padding: 0;
 	overflow: visible;
+	&:hover {
+		.tile-photo {
+			background-color: var(--clr-bg-light);
+		}
+	}
 	.tile-photos-wrap {
 		background: #E6EAF3;
 		margin: 0;
 		display: flex;
 		flex-wrap: wrap;
-		padding: 8px 6px 6px 6px;
+		padding: 5px 4px 4px 4px;
 		width: 100%;
 		flex-shrink: 0;
 		line-height: 1;
@@ -161,13 +166,15 @@
 	}
 	.tile-photo-wrap {
 		width: 50%;
-		border: 2px solid #E6EAF3;
+		border: 1px solid #E6EAF3;
 		flex-shrink: 0;
 		margin: 0;
+		background-color: #fff;
 	}
 	.tile-photo {
 		background-color: #fff;
 		aspect-ratio: 1;
+		transition: all ease 0.2s;
 	}
 	.tile-info-wrap {
 		display: block;
@@ -335,16 +342,16 @@
 .elm-status, .tile-status {
 	display: block;
 	position: relative;
-	padding-left: 9px;
+	padding-left: 12px;
 	&:before {
 		content: "";
 		display: block;
-		width: 4px;height: 4px;
+		width: 6px;height: 6px;
 		border-radius: 50%;
 		background: var(--clr-light);
 		position: absolute;
 		top: 50%;left: 0;
-		margin-top: -2px;
+		margin-top: -3px;
 	}
 	&.color-alert {
 		&:before {
