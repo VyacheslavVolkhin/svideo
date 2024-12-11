@@ -2416,7 +2416,7 @@ select.form-input:required:invalid {
 }
 .field-title {
   display: block;
-  font-size: 12px;
+  font-size: 14px;
   line-height: normal;
   font-weight: 500;
   color: var(--clr-light);
