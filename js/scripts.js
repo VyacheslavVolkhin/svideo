@@ -216,11 +216,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	document.querySelectorAll(".js-popup-open").forEach(function (element) {
 	element.addEventListener("click", function (e) {
 
-		for (i=0;i<popupsList.length;i++) {
-			popupsList[i
-				].classList.remove("active");
-			}
-			
+		
 		document.querySelector(".popup-outer-box").classList.remove("active");
 		document.body.classList.add("popup-open");
 

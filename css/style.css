@@ -1362,15 +1362,15 @@ html.with-fancybox body.hide-scrollbar {
   padding-top: 18rem;
 }
 .tiles-layers-box {
-  margin-bottom: 100px;
-  margin-bottom: 10rem;
+  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 .tiles-layers-box .item-wrap {
   width: 25%;
 }
 .tiles-box {
-  margin-bottom: 100px;
-  margin-bottom: 10rem;
+  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 .tiles-box .item-wrap {
   width: 33.33%;
@@ -1763,6 +1763,9 @@ body.popup-open {
   bottom: 0;
   left: 0;
   right: 0;
+}
+.popup-outer-box#popup-edit {
+  z-index: 101;
 }
 .popup-outer-box.active {
   display: -ms-flexbox;
