@@ -701,9 +701,9 @@ html.with-fancybox body.hide-scrollbar {
 }
 @media (min-width: 1024px) {
   .header-panel-box .field-tabs {
-    width: 40.2rem;
-    -ms-flex: 0 0 40.2rem;
-        flex: 0 0 40.2rem;
+    width: 40rem;
+    -ms-flex: 0 0 40rem;
+        flex: 0 0 40rem;
   }
   .header-panel-box .tabs-box .menu .btn {
     min-width: 0;
