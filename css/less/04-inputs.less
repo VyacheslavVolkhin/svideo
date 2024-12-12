@@ -278,7 +278,7 @@ select.form-input:required:invalid {
 		}
 	}
 	.button-info {
-		margin: 0 8px 0 0;
+		margin: 0 12px 0 0;
 		flex-shrink: 0;
 		display: block;
 	}
@@ -351,6 +351,13 @@ select.form-input:required:invalid {
 		width: 44px;height: 44px;
 		border-radius: 50%;
 	}
+	&.button-small {
+		width: 32px;height: 32px;
+		border-radius: 50%;
+		&:before, &:after {
+			background-size: 16px auto;
+		}
+	}
     &:before, &:after, [class*="icon-"], img, svg {
         display: block;
         position: absolute;
@@ -389,6 +396,12 @@ select.form-input:required:invalid {
 		&:before {
 			background-image: url(../img/icons/trash.svg);
 		}
+		&.btn.button-light {
+			&:hover {
+				background-color: var(--clr-att-alert);
+				border-color: var(--clr-att-alert);
+			}
+		}
 	}
     &.ico-arrow {
         z-index: 20;
@@ -410,6 +423,11 @@ select.form-input:required:invalid {
     &.ico-menu {
 		&:before {
 			background-image: url(../img/icons/menu.svg);
+		}
+    }
+    &.ico-edit {
+		&:before {
+			background-image: url(../img/icons/edit.svg);
 		}
     }
     &.ico-menu-dotted {

@@ -9,6 +9,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/fancybox.css" />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
@@ -96,17 +100,20 @@
         <!-- /header -->
 
         <!--header-panel-box-->
-        <div class="header-panel-box cnt-section">
-            <div class="inner-wrap">
+        <div class="header-panel-box cnt-section js-popup-wrap no-close">
+            <a href="" class="btn-popup btn js-btn-popup-toggle">
+                <div class="button-title" data-show="Фильтр" data-hide="Скрыть"></div>
+            </a>
+            <div class="inner-wrap js-popup-block">
                 <div class="frm-row">
                     <div class="frm-field field-tabs">
-                        <div class="tabs-box">
+                        <div class="tabs-box js-tabs-nav">
                             <ul class="menu">
                                 <li>
-                                    <a href="" class="btn button-tab active">Дерево</a>
+                                    <a href="" class="btn button-tab active" data-tab="pagetiles">Дерево</a>
                                 </li>
                                 <li>
-                                    <a href="" class="btn button-tab">Карта</a>
+                                    <a href="" class="btn button-tab" data-tab="pagemap">Карта</a>
                                 </li>
                             </ul>
                         </div>
@@ -137,7 +144,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="frm-field field-input">
+                    <div class="frm-field field-search">
                         <input type="text" class="form-input" placeholder="Поиск">
                     </div>
                     <div class="frm-field field-button">
@@ -168,7 +175,7 @@
         <div class="page-full">
 
             <!--content-outer-wrap-->
-            <div class="content-outer-wrap">
+            <div class="content-outer-wrap js-tab-block" data-tab="pagetiles">
 
                 <!--content-wrap-->
                 <div class="content-wrap">
@@ -177,7 +184,7 @@
                     <div class="actions-box">
                         <div class="frm-row">
                             <div class="frm-field">
-                                <a href="" class="btn button-border">
+                                <a href="" class="btn button-border js-popup-open" data-popup="popup-video-empty">
                                     <div class="button-title">Создать камеру</div>
                                 </a>
                             </div>
@@ -205,7 +212,7 @@
                                     <div class="tile-stickers-wrap">
                                     </div>
                                     <div class="tile-photo-wrap">
-                                        <div class="tile-photo photo-cover photo-out"></div>
+                                        <div class="tile-photo photo-cover photo-out js-popup-open" data-tab="popup-video-empty"></div>
                                     </div>
                                     <div class="tile-title-wrap">
                                         <div class="tile-title tile-status">Камера 78.1.10 (демонтирована)</div>
@@ -216,8 +223,7 @@
                                             <div class="tile-sticker color-success">1 м</div>
                                         </div>
                                     </div>
-                                    <a href="" class="tile-link"></a>
-                                    <a href="" class="tile-button-fav btn button-vlight btn-action-ico ico-fav button-active-toggle js-btn-tgl"></a>
+                                    <a href="" class="tile-button-fav btn button-vlight button-small btn-action-ico ico-fav button-active-toggle js-btn-tgl"></a>
                                 </div>
                             </div>
                             <!--/item wrap-->
@@ -228,7 +234,7 @@
                                         <div class="tile-sticker color-alert">LIVE</div>
                                     </div>
                                     <div class="tile-photo-wrap">
-                                        <div class="tile-photo photo-cover photo-out">
+                                        <div class="tile-photo photo-cover photo-out js-popup-open" data-popup="popup-video-empty">
                                             <img src="./img/tile01.jpg" alt="">
                                         </div>
                                     </div>
@@ -241,8 +247,7 @@
                                             <div class="tile-sticker">1 н</div>
                                         </div>
                                     </div>
-                                    <a href="" class="tile-link"></a>
-                                    <a href="" class="tile-button-fav btn button-vlight btn-action-ico ico-fav button-active-toggle js-btn-tgl"></a>
+                                    <a href="" class="tile-button-fav btn button-vlight button-small btn-action-ico ico-fav button-active-toggle js-btn-tgl"></a>
                                 </div>
                             </div>
                             <!--/item wrap-->
@@ -252,7 +257,7 @@
                                     <div class="tile-stickers-wrap">
                                     </div>
                                     <div class="tile-photo-wrap">
-                                        <div class="tile-photo photo-cover photo-out">
+                                        <div class="tile-photo photo-cover photo-out js-popup-open" data-popup="popup-video-empty">
                                             <img src="./img/tile02.jpg" alt="">
                                         </div>
                                     </div>
@@ -265,8 +270,7 @@
                                             <div class="tile-sticker color-alert">1 д</div>
                                         </div>
                                     </div>
-                                    <a href="" class="tile-link"></a>
-                                    <a href="" class="tile-button-fav btn button-vlight btn-action-ico ico-fav button-active-toggle js-btn-tgl active"></a>
+                                    <a href="" class="tile-button-fav btn button-vlight button-small btn-action-ico ico-fav button-active-toggle js-btn-tgl active"></a>
                                 </div>
                             </div>
                             <!--/item wrap-->
@@ -276,7 +280,7 @@
                                     <div class="tile-stickers-wrap">
                                     </div>
                                     <div class="tile-photo-wrap">
-                                        <div class="tile-photo photo-cover photo-out">
+                                        <div class="tile-photo photo-cover photo-out js-popup-open" data-popup="popup-video-empty">
                                             <img src="./img/tile03.jpg" alt="">
                                         </div>
                                     </div>
@@ -289,8 +293,7 @@
                                             <div class="tile-sticker color-success">1 м</div>
                                         </div>
                                     </div>
-                                    <a href="" class="tile-link"></a>
-                                    <a href="" class="tile-button-fav btn button-vlight btn-action-ico ico-fav button-active-toggle js-btn-tgl"></a>
+                                    <a href="" class="tile-button-fav btn button-vlight button-small btn-action-ico ico-fav button-active-toggle js-btn-tgl"></a>
                                 </div>
                             </div>
                             <!--/item wrap-->
@@ -300,8 +303,7 @@
                                     <div class="tile-stickers-wrap">
                                     </div>
                                     <div class="tile-photo-wrap">
-                                        <div class="tile-photo photo-cover photo-out-video">
-                                        </div>
+                                        <div class="tile-photo photo-cover photo-out-video js-popup-open" data-popup="popup-video-empty"></div>
                                     </div>
                                     <div class="tile-title-wrap">
                                         <div class="tile-title tile-status color-alert">Камера 79.1.10</div>
@@ -312,8 +314,7 @@
                                             <div class="tile-sticker color-success">1 м</div>
                                         </div>
                                     </div>
-                                    <a href="" class="tile-link"></a>
-                                    <a href="" class="tile-button-fav btn button-vlight btn-action-ico ico-fav button-active-toggle js-btn-tgl"></a>
+                                    <a href="" class="tile-button-fav btn button-vlight button-small btn-action-ico ico-fav button-active-toggle js-btn-tgl"></a>
                                 </div>
                             </div>
                             <!--/item wrap-->
@@ -440,6 +441,24 @@
 
                 </div>
                 <!--/side-wrap-->
+
+            </div>
+            <!--/content-outer-wrap-->
+
+            <!--content-outer-wrap-->
+            <div class="content-outer-wrap js-tab-block" data-tab="pagemap">
+
+                <!--content-wrap-->
+                <div class="content-wrap">
+
+                    <!--map-box-->
+                    <div class="map-box">
+                        <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=-eov8YMYfEHTrqs_Q1kKzkBJYs6HKSuT&width=100%25&height=100%25&lang=ru_RU&sourceType=constructor"></script>
+                    </div>
+                    <!--/map-box-->
+
+                </div>
+                <!--/content-wrap-->
 
             </div>
             <!--/content-outer-wrap-->
@@ -586,9 +605,8 @@
                             <a href="" class="btn button-light btn-action-ico">
                                 <img src="./img/icons/share.svg" alt="">
                             </a>
-                            <a href="" class="btn button-light btn-action-ico">
-                                <img src="./img/icons/edit.svg" alt="">
-                            </a>
+                            <a href="" class="btn button-light btn-action-ico ico-edit js-popup-open" data-popup="popup-edit"></a>
+                            <a href="" class="btn button-light btn-action-ico ico-fav button-active-toggle js-btn-tgl active"></a>
                             <a href="" class="btn button-light btn-action-ico ico-fav button-active-toggle js-btn-tgl"></a>
                             <a href="" class="btn button-light btn-action-ico ico-del"></a>
                         </div>
@@ -653,9 +671,7 @@
                             <a href="" class="btn button-light btn-action-ico">
                                 <img src="./img/icons/share.svg" alt="">
                             </a>
-                            <a href="" class="btn button-light btn-action-ico">
-                                <img src="./img/icons/edit.svg" alt="">
-                            </a>
+                            <a href="" class="btn button-light btn-action-ico ico-edit js-popup-open" data-popup="popup-edit"></a>
                             <a href="" class="btn button-light btn-action-ico ico-fav button-active-toggle js-btn-tgl"></a>
                         </div>
                     </div>

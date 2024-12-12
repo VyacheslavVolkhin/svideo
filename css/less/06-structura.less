@@ -119,11 +119,15 @@ html.with-fancybox body.hide-scrollbar {
 			}
 		}
 	}
+	.frm-row {
+		margin: 0 -5px;
+	}
 	.frm-field {
 		width: 25%;
 		min-width: 300px;
 		margin-bottom: 10px;
 		flex-shrink: 0;
+		padding: 0 5px;
 	}
 	.field-max {
 		width: auto;
@@ -136,6 +140,17 @@ html.with-fancybox body.hide-scrollbar {
 		flex-wrap: nowrap;
 		min-width: 0;
 		flex-shrink: 0;
+		.btn {
+			&.button-light {
+				&.active {
+					background-color: var(--clr-att);
+					border-color: var(--clr-att);
+					img, svg {
+						filter: brightness(0) invert(1);
+					}
+				}
+			}
+		}
 	}
 	.field-button {
 		width: auto;
@@ -172,14 +187,17 @@ html.with-fancybox body.hide-scrollbar {
 	}
 	.form-input {
 		padding-left: 14px;
-		font-weight: 600;
+		font-weight: 500;
 	}
 	.btn-action-ico {
-		margin-left: 16px;
+		margin-left: 10px;
 		flex: 0 0 40px;
 		&:first-child {
 			margin-left: 0;
 		}
+	}
+	.btn-popup {
+		display: none;
 	}
 }
 .header {
@@ -242,7 +260,7 @@ html.with-fancybox body.hide-scrollbar {
 		height: calc(100dvh - 10rem);
 		width: 100%;
 		position: relative;
-		padding: 2rem 0 4rem 0;
+		padding: 2rem 0 2rem 0;
 		z-index: 2;
 		overflow-y: auto;
 		overflow-x: hidden;
@@ -259,12 +277,12 @@ html.with-fancybox body.hide-scrollbar {
 	}
 	.btn-popup-close {
 		position: fixed;
-		top: 18px;left: 4.8rem;
+		top: 18px;left: 3rem;
 		z-index: 2;
 		transition: all ease 0.2s;
 	}
 	.footer-wrap {
-		padding: 10px 4.8rem 0 4.8rem;
+		padding: 0 3rem 0 3rem;
 		color: var(--clr-light);
 		font-size: 14px;
 		font-weight: 400;
@@ -326,10 +344,13 @@ html.with-fancybox body.hide-scrollbar {
 }
 @media (max-width: 1799px) {
 	.header-panel-box {
-		.field-input {
+		.field-input, .field-search {
 			width: 20%;
 			min-width: 0;
 			min-width: 200px;
+		}
+		.field-search {
+			width: 25%;
 		}
 	}
 }
@@ -341,16 +362,32 @@ html.with-fancybox body.hide-scrollbar {
         margin-right: calc(var(--paddingContainer) * -1);
     }
 	.header-panel-box {
-		.field-input {
+		.field-input, .field-search {
 			width: 25%;
 			min-width: 0;
 			min-width: 300px;
+		}
+		.btn-popup {
+			display: inline-flex;
+			margin-left: var(--paddingContainer);
+			margin-bottom: 10px;
+		}
+		.inner-wrap {
+			display: none;
+		}
+		&:has(.field-max) {
+			.field-max {
+				min-width: 0;
+			}
+			.frm-row {
+				flex-wrap: nowrap;
+			}
 		}
 	}
 }
 @media (max-width: 767px) {
 	.header-panel-box {
-		.field-input {
+		.field-input, .field-search {
 			width: 50%;
 		}
 		.field-tabs {
@@ -380,7 +417,7 @@ html.with-fancybox body.hide-scrollbar {
 }
 @media (max-width: 639px) {
 	.header-panel-box {
-		.field-input {
+		.field-input, .field-search {
 			width: 100%;
 		}
 	}
