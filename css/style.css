@@ -1703,7 +1703,7 @@ body.popup-open {
   overflow: hidden;
 }
 .popup-video-box video {
-  aspect-ratio: 1053/624;
+  aspect-ratio: 1053/550;
   display: block;
   width: 100%;
 }
@@ -1778,8 +1778,8 @@ body.popup-open {
       align-items: stretch;
 }
 .popup-outer-box.popup-side .popup-box {
-  width: 800px;
-  width: 80rem;
+  width: 1115px;
+  width: 111.5rem;
   max-width: 100%;
   border-radius: 0;
 }
