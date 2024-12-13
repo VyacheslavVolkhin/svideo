@@ -186,7 +186,7 @@
                     <div class="actions-box">
                         <div class="frm-row">
                             <div class="frm-field">
-                                <a href="" class="btn button-border js-popup-open" data-popup="popup-video-empty">
+                                <a href="" class="btn button-border js-popup-open" data-popup="popup-video">
                                     <div class="button-title">Создать камеру</div>
                                 </a>
                             </div>
@@ -214,7 +214,7 @@
                                     <div class="tile-stickers-wrap">
                                     </div>
                                     <div class="tile-photo-wrap">
-                                        <div class="tile-photo photo-cover photo-out js-popup-open" data-popup="popup-video-empty"></div>
+                                        <div class="tile-photo photo-cover photo-out js-popup-open" data-popup="popup-video"></div>
                                     </div>
                                     <div class="tile-title-wrap">
                                         <div class="tile-title tile-status">Камера 78.1.10 (демонтирована)</div>
@@ -236,7 +236,7 @@
                                         <div class="tile-sticker color-alert">LIVE</div>
                                     </div>
                                     <div class="tile-photo-wrap">
-                                        <div class="tile-photo photo-cover photo-out js-popup-open" data-popup="popup-video-empty">
+                                        <div class="tile-photo photo-cover photo-out js-popup-open" data-popup="popup-video">
                                             <img src="./img/tile01.jpg" alt="">
                                         </div>
                                     </div>
@@ -259,7 +259,7 @@
                                     <div class="tile-stickers-wrap">
                                     </div>
                                     <div class="tile-photo-wrap">
-                                        <div class="tile-photo photo-cover photo-out js-popup-open" data-popup="popup-video-empty">
+                                        <div class="tile-photo photo-cover photo-out js-popup-open" data-popup="popup-video">
                                             <img src="./img/tile02.jpg" alt="">
                                         </div>
                                     </div>
@@ -282,7 +282,7 @@
                                     <div class="tile-stickers-wrap">
                                     </div>
                                     <div class="tile-photo-wrap">
-                                        <div class="tile-photo photo-cover photo-out js-popup-open" data-popup="popup-video-empty">
+                                        <div class="tile-photo photo-cover photo-out js-popup-open" data-popup="popup-video">
                                             <img src="./img/tile03.jpg" alt="">
                                         </div>
                                     </div>
@@ -305,7 +305,7 @@
                                     <div class="tile-stickers-wrap">
                                     </div>
                                     <div class="tile-photo-wrap">
-                                        <div class="tile-photo photo-cover photo-out-video js-popup-open" data-popup="popup-video-empty"></div>
+                                        <div class="tile-photo photo-cover photo-out-video js-popup-open" data-popup="popup-video"></div>
                                     </div>
                                     <div class="tile-title-wrap">
                                         <div class="tile-title tile-status color-alert">Камера 79.1.10</div>
@@ -574,7 +574,7 @@
         </div>
     </div><!--/popup-outer-box-->
     <!--popup-outer-box-->
-    <div class="popup-outer-box popup-side" id="popup-video-empty">
+    <div class="popup-outer-box popup-side" id="popup-video">
         <div class="popup-box">
             <a href="" class="btn-popup-close btn button-light button-large btn-action-ico ico-close js-popup-close"></a>
             <div class="popup-title-wrap">
@@ -595,22 +595,48 @@
                             <div class="tabs-box js-tabs-nav">
                                 <ul class="menu">
                                     <li>
-                                        <a href="" class="btn button-tab active" data-tab="popup01">Видео</a>
+                                        <a href="" class="btn button-tab" data-tab="popup01">Видео</a>
                                     </li>
                                     <li>
-                                        <a href="" class="btn button-tab" data-tab="popup02">События</a>
+                                        <a href="" class="btn button-tab active" data-tab="popup02">События</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="btn button-tab" data-tab="popup03">Пусто</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="frm-field field-actions js-tab-block" data-tab="popup01">
-                            <a href="" class="btn button-light btn-action-ico">
-                                <img src="./img/icons/share.svg" alt="">
-                            </a>
+                            <a href="" class="btn button-light btn-action-ico ico-share"></a>
                             <a href="" class="btn button-light btn-action-ico ico-edit js-popup-open" data-popup="popup-edit"></a>
                             <a href="" class="btn button-light btn-action-ico ico-fav button-active-toggle js-btn-tgl active"></a>
                             <a href="" class="btn button-light btn-action-ico ico-fav button-active-toggle js-btn-tgl"></a>
                             <a href="" class="btn button-light btn-action-ico ico-del"></a>
+                        </div>
+                        <div class="frm-field field-actions js-tab-block" data-tab="popup02">
+                            <a href="" class="btn button-light btn-action-ico ico-share"></a>
+                            <a href="" class="btn button-light btn-action-ico ico-edit js-popup-open" data-popup="popup-edit"></a>
+                            <a href="" class="btn button-light btn-action-ico ico-del"></a>
+                        </div>
+                        <div class="frm-field field-pages">
+                            <div class="field-inner-title">Строк на странице:</div>
+                            <div class="field-inner-form">
+                                <select class="form-input form-input-clear">
+                                    <option value="">5</option>
+                                    <option value="">5</option>
+                                    <option value="">5</option>
+                                    <option value="">5</option>
+                                    <option value="">5</option>
+                                    <option value="">5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="frm-field field-pages-total">
+                            <div class="field-inner-title">1-5 из более, чем 5</div>
+                        </div>
+                        <div class="frm-field field-pages-nav">
+                            <a href="" class="btn button-light btn-action-ico ico-arrow ico-arrow-prev button-disabled"></a>
+                            <a href="" class="btn button-light btn-action-ico ico-arrow ico-arrow-next"></a>
                         </div>
                     </div>
                 </div>
@@ -628,77 +654,113 @@
                         <p>Примечание: Камера работает полноценно</p>
                     </div>
                 </div>
-                <div class="popup-empty-box empty-box js-tab-block" data-tab="popup02">
+                <div class="popup-tiles-box empty-box js-tab-block" data-tab="popup02">
+                    <div class="form-inner-wrap">
+                        <input type="text" class="form-input" placeholder="Поиск автомобиля по госномеру">
+                    </div>
+                    <div class="items-wrap">
+                        <!--item wrap-->
+                        <div class="item-wrap">
+                            <div class="item-tile-main tile-light">
+                                <div class="tile-stickers-wrap">
+                                </div>
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo photo-cover photo-out-video">
+                                        <img src="./img/video01.jpg" alt="">
+                                        <div class="btn-action-ico ico-play"></div>
+                                    </div>
+                                </div>
+                                <div class="tile-title-wrap">
+                                    <div class="tile-title">Детектор номера</div>
+                                    <div class="tile-title-info">E102CH 102</div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-date">23.07.2024 12:36:51</div>
+                                    <div class="tile-ico">
+                                        <img src="./img/icons/car.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap">
+                            <div class="item-tile-main tile-light">
+                                <div class="tile-stickers-wrap">
+                                </div>
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo photo-cover photo-out-video">
+                                        <img src="./img/video02.jpg" alt="">
+                                        <div class="btn-action-ico ico-play"></div>
+                                    </div>
+                                </div>
+                                <div class="tile-title-wrap">
+                                    <div class="tile-title">Детектор движения</div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-date">23.07.2024 12:36:51</div>
+                                    <div class="tile-ico">
+                                        <img src="./img/icons/people.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap">
+                            <div class="item-tile-main tile-light">
+                                <div class="tile-stickers-wrap">
+                                </div>
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo photo-cover photo-out-video">
+                                        <img src="./img/video01.jpg" alt="">
+                                        <div class="btn-action-ico ico-play"></div>
+                                    </div>
+                                </div>
+                                <div class="tile-title-wrap">
+                                    <div class="tile-title">Детектор номера</div>
+                                    <div class="tile-title-info">E102CH 102</div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-date">23.07.2024 12:36:51</div>
+                                    <div class="tile-ico">
+                                        <img src="./img/icons/car.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap">
+                            <div class="item-tile-main tile-light">
+                                <div class="tile-stickers-wrap">
+                                </div>
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo photo-cover photo-out-video">
+                                        <img src="./img/video02.jpg" alt="">
+                                        <div class="btn-action-ico ico-play"></div>
+                                    </div>
+                                </div>
+                                <div class="tile-title-wrap">
+                                    <div class="tile-title">Детектор движения</div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-date">23.07.2024 12:36:51</div>
+                                    <div class="tile-ico">
+                                        <img src="./img/icons/people.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                    </div>
+                </div>
+                <div class="popup-empty-box empty-box js-tab-block" data-tab="popup03">
                     <div class="title-inner-wrap">
                         <div class="elm-ico">
                             <img src="./img/icons/detector.svg" alt="">
                         </div>
                         <div class="title-inner">Здесь пока пусто</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div><!--/popup-outer-box-->
-    <!--popup-outer-box-->
-    <div class="popup-outer-box popup-side" id="popup-video-main">
-        <div class="popup-box">
-            <a href="" class="btn-popup-close btn button-light button-large btn-action-ico ico-close js-popup-close"></a>
-            <div class="popup-title-wrap">
-                <div class="popup-title">Камера 82.1.10</div>
-                <div class="breadcrumbs-box">
-                    <ol class="menu">
-                        <li><a href="">САМОЛЕТ</a></li>
-                        <li><a href="">Санкт-Петербург</a></li>
-                        <li><a href="">Новое Колпино (Астрид)</a></li>
-                        <li><a href="">Стройплощадка</a></li>
-                    </ol>
-                </div>
-            </div>
-            <div class="popup-content-wrap">
-                <div class="popup-actions-panel">
-                    <div class="frm-row">
-                        <div class="frm-field field-tabs">
-                            <div class="tabs-box js-tabs-nav">
-                                <ul class="menu">
-                                    <li>
-                                        <a href="" class="btn button-tab" data-tab="popup03">Видео</a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="btn button-tab active" data-tab="popup04">События</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="frm-field field-actions js-tab-block" data-tab="popup03">
-                            <a href="" class="btn button-light btn-action-ico">
-                                <img src="./img/icons/share.svg" alt="">
-                            </a>
-                            <a href="" class="btn button-light btn-action-ico ico-edit js-popup-open" data-popup="popup-edit"></a>
-                            <a href="" class="btn button-light btn-action-ico ico-fav button-active-toggle js-btn-tgl"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="popup-video-box js-tab-block" data-tab="popup03">
-                    <video controls autoplay loop muted playsinline>
-                        <source src="./img/1.mp4" type="video/mp4">
-                        <!--<source src="./img/1.webm" type="video/webm">-->
-                        <!--<source src="./img/1.ogv" type="video/ogg">-->
-                        <p>HTML5 video не поддерживается вашим браузером.</p>
-                    </video>
-                    <div class="info-inner-wrap">
-                        <p>IP: 10.78.1.11</p>
-                        <p>MAC: fc:9f:fd:58:d9:95</p>
-                        <p>Модель: DS-2cd2043G2-IU</p>
-                        <p>Примечание: Камера работает полноценно</p>
-                    </div>
-                </div>
-                <div class="popup-events-box js-tab-block" data-tab="popup04">
-                    <div class="items-wrap">
-                        <!--item wrap-->
-                        <div class="item-wrap">
-                            CONTENT
-                        </div>
-                        <!--/item wrap-->
                     </div>
                 </div>
             </div>

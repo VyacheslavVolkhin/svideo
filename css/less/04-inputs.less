@@ -47,11 +47,11 @@ select.form-input {
         vertical-align: middle;
         font-size: 1em;
         line-height: inherit;
-        padding: 0 16px 0 0;
+        padding: 0 24px 0 0;
         color: inherit;
         font-weight: bold;
-        background-image: url(../img/icons/arrow-select.png);
-        background-size: 8px auto;
+        background-image: url(../img/icons/arrow-select.svg);
+        background-size: 24px auto;
         background-repeat: no-repeat;
         background-position: right center;
     }
@@ -410,16 +410,36 @@ select.form-input:required:invalid {
 			}
 		}
 	}
+	&.ico-play {
+		width: 50px;height: 50px;
+		border-radius: 50%;
+		background: rgba(0, 0, 0, 0.70);
+		cursor: pointer;
+		&:before {
+			background-image: url(../img/icons/play.svg);
+			background-size: 100% auto;
+		}
+		&:hover {
+			background: rgba(0, 0, 0, 0.50);
+		}
+	}
     &.ico-arrow {
         z-index: 20;
         cursor: pointer;
         &:before {
-            background-image: url(../img/icons/arrow-slider.png);
+            background-image: url(../img/icons/arrow-next.svg);
         }
         &:hover {
         }
 		&.swiper-button-disabled {
 			opacity: 0.5;
+		}
+		&.button-disabled {
+			opacity: 1;
+			pointer-events: none;
+			&:before {
+				filter: brightness(0) grayscale(1) opacity(0.4);
+			}
 		}
     }
     &.ico-arrow-prev {
@@ -435,6 +455,11 @@ select.form-input:required:invalid {
     &.ico-edit {
 		&:before {
 			background-image: url(../img/icons/edit.svg);
+		}
+    }
+    &.ico-share {
+		&:before {
+			background-image: url(../img/icons/share.svg);
 		}
     }
     &.ico-menu-dotted {

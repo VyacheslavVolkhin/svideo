@@ -67,6 +67,13 @@
 	transition: all ease 0.2s;
 	overflow: hidden;
 	padding: 15px;
+	&.tile-light {
+		background-color: #F4F6FB;
+		&:hover {
+			background-color: #E6EAF3;
+			background-color: (#E6EAF3 - #080808);
+		}
+	}
 	&:hover {
 		background-color: #E6EAF3;
 		background-color: (#E6EAF3 - #080808);
@@ -99,9 +106,23 @@
 		justify-content: space-between;
 		align-items: center;
 		margin-top: 4px;
+		.tile-ico {
+			width: 24px;height: 24px;
+			flex-shrink: 0;
+		}
 	}
 	.tile-title-wrap {
-		display: block;
+		display: flex;
+		.tile-title {
+			flex: 1;
+		}
+		.tile-title-info {
+			text-align: right;
+			max-width: 50%;
+			flex-shrink: 0;
+			padding-left: 10px;
+			font-weight: 600;
+		}
 	}
 	.tile-photo {
 		aspect-ratio: 416/230;
@@ -289,6 +310,16 @@
         display: none;
         padding-top: 100%;
     }
+	.btn-action-ico.ico-play {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 2;
+		margin: auto;
+		display: 50px;height: 50px;
+	}
     img {
         display: block;
         position: relative;
