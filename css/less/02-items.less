@@ -1,6 +1,27 @@
 /* ----------------------------------- *\
 			items styles
 \* ----------------------------------- */
+.item-tile-button {
+	display: block;
+	position: relative;
+	min-height: 100%;
+	aspect-ratio: 512/300;
+	background-color: #F4F6FB;
+	border-radius: 10px;
+	overflow: hidden;
+	&:before {
+		content: "";
+		display: block;
+		width: 7.8%;
+		min-width: 10px;
+		aspect-ratio: 1;
+		position: absolute;
+		background: url(../img/icons/plus.svg) center no-repeat;
+		background-size: 200% auto;
+		top: 50%;left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
 .item-tile-video {
 	position: relative;
 	display: block;
@@ -461,5 +482,10 @@
 	}
 	&.color-success {
 		background-color: var(--clr-att-success);
+	}
+}
+@media (max-width: 1023px) {
+	.item-tile-button {
+		border-radius: 2px;
 	}
 }

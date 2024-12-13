@@ -313,7 +313,7 @@ select.form-input:required:invalid {
         border: none;
         box-shadow: none;
     }
-	&.btn.button-light {
+	&.btn.button-light:not(.button-active-att) {
 		&:hover, &.active {
 			&:before, &:after, img, svg {
 				filter: brightness(0) invert(1);
@@ -455,6 +455,26 @@ select.form-input:required:invalid {
     &.ico-edit {
 		&:before {
 			background-image: url(../img/icons/edit.svg);
+		}
+    }
+    &.ico-layer-4 {
+		&:before {
+			background-image: url(../img/icons/layer-4.svg);
+		}
+    }
+    &.ico-layer-9 {
+		&:before {
+			background-image: url(../img/icons/layer-9.svg);
+		}
+    }
+    &.ico-layer-12 {
+		&:before {
+			background-image: url(../img/icons/layer-12.svg);
+		}
+    }
+    &.ico-layer-main {
+		&:before {
+			background-image: url(../img/icons/layer-main.svg);
 		}
     }
     &.ico-share {

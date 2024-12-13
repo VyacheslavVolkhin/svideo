@@ -1,5 +1,34 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+	//popup layers tiles toggle
+	let buttons = document.querySelectorAll('.popup-form-box .btn-action-ico');
+	let layersBox = document.querySelector('.popup-layers-box');
+	
+	// Назначение класса из data-class кнопки с классом 'active'
+	buttons.forEach(function(button) {
+		if (button.classList.contains('active')) {
+			let dataClass = button.getAttribute('data-class');
+			layersBox.classList.add(dataClass);
+		}
+	});
+	
+	// Добавление события click на кнопки
+	buttons.forEach(function(button) {
+		button.addEventListener('click', function(e) {
+			e.preventDefault();
+			
+			let dataClass = e.target.getAttribute('data-class');
+			layersBox.className = 'popup-layers-box ' + dataClass;
+			
+			buttons.forEach(function(btn) {
+				btn.classList.remove('active');
+			});
+			
+			e.target.classList.add('active');
+			
+			return false;
+		});
+	});
 
 
 	//btn tgl and add
