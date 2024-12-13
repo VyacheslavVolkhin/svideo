@@ -452,6 +452,7 @@ body.popup-open {
 	overflow: hidden;
 }
 .popup-video-box {
+	max-width: 900px;
 	video {
 		aspect-ratio: 1053/550;
 		display: block;
@@ -647,10 +648,15 @@ body.popup-open {
 		text-align: center;
 		font-weight: 500;
 		flex: 1;
-		display: flex;
 		align-items: center;
 		justify-content: center;
 		flex-wrap: nowrap;
+		&:not(.js-tab-block) {
+			display: flex;
+		}
+		&.active {
+			display: flex;
+		}
 		.field-inner-title {
 			flex-shrink: 0;
 			margin: 0 10px 0 0;
@@ -693,6 +699,8 @@ body.popup-open {
 		align-items: stretch;
 		.popup-box {
 			width: 111.5rem;
+			width: 58%;
+			min-width: 300px;
 			max-width: 100%;
 			border-radius: 0;
 			display: flex;
@@ -936,7 +944,7 @@ body.popup-open {
 		}
 	}
 	.popup-outer-box.popup-side .popup-box {
-		width: 60rem;
+		//width: 60rem;
 		.popup-title-wrap {
 			padding-top: 0;
 		}
@@ -1082,7 +1090,10 @@ body.popup-open {
 			}
 		}
 	}
-	.popup-outer-box.popup-side .popup-box {
+	.popup-video-box {
+		max-width: 600px;
+	}
+	/* .popup-outer-box.popup-side .popup-box {
 		width: 60rem;
 		.popup-title-wrap {
 			padding-top: 0;
@@ -1104,7 +1115,7 @@ body.popup-open {
 			padding: 0 1px;
 			margin-bottom: 2px;
 		}
-	}
+	} */
 }
 @media (min-width: 1024px) and  (max-height: 799px) {
 	.popup-outer-box {
@@ -1139,5 +1150,10 @@ body.popup-open {
 			padding-top: 0;
 			padding-bottom: 0;
 		}
+	}
+}
+@media (min-width: 1024px) and  (max-height: 699px) {
+	.popup-video-box {
+		max-width: 400px;
 	}
 }
