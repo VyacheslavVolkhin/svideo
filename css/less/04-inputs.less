@@ -328,6 +328,13 @@ select.form-input:required:invalid {
 			&:before, &:after, img, svg {
 				filter: none;
 			}
+			&:hover {
+				background-color: var(--clr-att);
+				border-color: var(--clr-att);
+				&:before, &:after, img, svg {
+					filter: brightness(0) invert(1);
+				}
+			}
 		}
 	}
 	&.btn.button-vlight {

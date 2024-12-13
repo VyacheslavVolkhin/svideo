@@ -701,9 +701,9 @@ html.with-fancybox body.hide-scrollbar {
 }
 @media (min-width: 1024px) {
   .header-panel-box .field-tabs {
-    width: 40rem;
-    -ms-flex: 0 0 40rem;
-        flex: 0 0 40rem;
+    width: 37.5rem;
+    -ms-flex: 0 0 37.5rem;
+        flex: 0 0 37.5rem;
   }
   .header-panel-box .tabs-box .menu .btn {
     min-width: 0;
@@ -1362,15 +1362,21 @@ html.with-fancybox body.hide-scrollbar {
   padding-top: 18rem;
 }
 .tiles-layers-box {
-  margin-bottom: 50px;
-  margin-bottom: 5rem;
+  margin-bottom: 30px;
+  margin-bottom: 3rem;
+}
+.tiles-layers-box:last-child {
+  margin-bottom: 0;
 }
 .tiles-layers-box .item-wrap {
   width: 25%;
 }
 .tiles-box {
-  margin-bottom: 50px;
-  margin-bottom: 5rem;
+  margin-bottom: 30px;
+  margin-bottom: 3rem;
+}
+.tiles-box:last-child {
+  margin-bottom: 0;
 }
 .tiles-box .item-wrap {
   width: 33.33%;
@@ -2400,6 +2406,16 @@ select.form-input:required:invalid {
 .btn-action-ico.btn.button-light.active img,
 .btn-action-ico.btn.button-light.active svg {
   filter: none;
+}
+.btn-action-ico.btn.button-light.active:hover {
+  background-color: var(--clr-att);
+  border-color: var(--clr-att);
+}
+.btn-action-ico.btn.button-light.active:hover:before,
+.btn-action-ico.btn.button-light.active:hover:after,
+.btn-action-ico.btn.button-light.active:hover img,
+.btn-action-ico.btn.button-light.active:hover svg {
+  filter: brightness(0) invert(1);
 }
 .btn-action-ico.btn.button-vlight:hover:before,
 .btn-action-ico.btn.button-vlight.active:before,
