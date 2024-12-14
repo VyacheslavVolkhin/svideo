@@ -1780,7 +1780,6 @@ body.popup-open {
 }
 .popup-video-box {
   max-width: 1000px;
-  border: 1px solid #ff0;
 }
 .popup-video-box video {
   aspect-ratio: 1053/550;
