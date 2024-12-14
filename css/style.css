@@ -1779,7 +1779,7 @@ body.popup-open {
   overflow: hidden;
 }
 .popup-video-box {
-  max-width: 900px;
+  max-width: 1000px;
 }
 .popup-video-box video {
   aspect-ratio: 1053/550;
@@ -2044,6 +2044,9 @@ body.popup-open {
 .popup-tiles-box .form-inner-wrap {
   margin-bottom: 40px;
   margin-bottom: 4rem;
+}
+.popup-tiles-box .item-tile-main .tile-title-wrap {
+  font-size: 14px;
 }
 .popup-side .popup-box .popup-title-wrap {
   padding-top: 10px;
